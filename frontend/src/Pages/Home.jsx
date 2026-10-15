@@ -1,4 +1,4 @@
-import Navbar from "../Components/Navbar.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
 
       {/* 3. Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-8">
-        <div className="relative rounded-3xl overflow-hidden bg-gray-900 text-white min-h-[520px] flex items-center p-12">
+        <div className="relative rounded-3xl overflow-hidden bg-gray-900 text-white min-h-130 flex items-center p-12">
           {/* Background Image Placeholder */}
           <div
             className="absolute inset-0 opacity-50 bg-cover bg-center"
@@ -93,7 +93,7 @@ function Home() {
                 alt={cat.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
                 <h3 className="text-white font-bold text-lg">{cat.title}</h3>
               </div>
             </div>
