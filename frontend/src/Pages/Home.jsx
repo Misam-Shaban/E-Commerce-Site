@@ -1,65 +1,30 @@
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../Component/Navbar.jsx";
+import Hero from "../Component/Hero.jsx";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
-      {/* 1. Top Announcement Bar */}
-      {/* <div className="bg-black text-white text-xs py-2 text-center font-medium tracking-wide">
-        ⚡ FREE SHIPPING ON ORDERS OVER $99 | USE CODE:{" "}
-        <span className="underline font-bold">FASHION2026</span>
-      </div> */}
-
-      {/* 2. Modern Navbar */}
+    <div className="min-h-screen bg-[#181818] text-gray-100 font-sans pb-10">
+      {/* Global Dark Background applied here */}
+      {/* 1. Navbar */}
       <Navbar />
 
-      {/* 3. Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
-        <div className="relative rounded-3xl overflow-hidden bg-gray-900 text-white min-h-130 flex items-center p-12">
-          {/* Background Image Placeholder */}
-          <div
-            className="absolute inset-0 opacity-50 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop')`,
-            }}
-          />
+      {/* 2. Hero Section */}
+      <Hero />
 
-          <div className="relative z-10 max-w-xl space-y-6">
-            <span className="inline-block bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
-              Spring / Summer Collection '26
-            </span>
-            <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-tight">
-              REDEFINE YOUR DAILY STYLE.
-            </h1>
-            <p className="text-gray-300 text-base">
-              Discover minimalist streetwear and high-end fashion pieces crafted
-              for comfort and modern aesthetic.
-            </p>
-            <div className="flex items-center space-x-4 pt-2">
-              <button className="bg-white text-black px-8 py-4 rounded-full font-bold text-sm hover:bg-gray-200 transition">
-                Shop Collection
-              </button>
-              <button className="border border-white/40 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-white/10 transition">
-                Explore Lookbook
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Categories Section */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex justify-between items-end mb-8">
+      {/* 3. Categories Section */}
+      <section className="max-w-7xl mx-auto px-6 py-16 mt-8">
+        <div className="flex justify-between items-end mb-10">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight text-white">
               Shop By Category
             </h2>
-            <p className="text-gray-500 text-sm mt-1">
+            <p className="text-gray-400 text-sm mt-2">
               Explore top collections curated for you
             </p>
           </div>
           <a
             href="#"
-            className="text-xs font-bold uppercase underline tracking-wider hover:text-gray-600"
+            className="text-xs font-bold uppercase underline tracking-wider text-gray-400 hover:text-white transition"
           >
             View All
           </a>
@@ -86,29 +51,29 @@ function Home() {
           ].map((cat, idx) => (
             <div
               key={idx}
-              className="group relative rounded-2xl overflow-hidden cursor-pointer h-72"
+              className="group relative rounded-2xl overflow-hidden cursor-pointer h-80"
             >
               <img
                 src={cat.img}
                 alt={cat.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
-                <h3 className="text-white font-bold text-lg">{cat.title}</h3>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-end p-6">
+                <h3 className="text-white font-bold text-xl tracking-wide">{cat.title}</h3>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* 5. Featured Products Grid */}
+      {/* 4. Featured Products Grid */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex justify-between items-end mb-8">
+        <div className="flex justify-between items-end mb-10">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight text-white">
               Trending Items
             </h2>
-            <p className="text-gray-500 text-sm mt-1">
+            <p className="text-gray-400 text-sm mt-2">
               Handpicked favorites this season
             </p>
           </div>
@@ -143,24 +108,24 @@ function Home() {
           ].map((prod, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-xl transition duration-300"
+              className="group bg-[#222222] rounded-2xl p-4 border border-[#333333] hover:border-gray-500 transition duration-300"
             >
-              <div className="relative rounded-xl overflow-hidden bg-gray-100 aspect-square mb-4">
-                <span className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+              <div className="relative rounded-xl overflow-hidden bg-[#1a1a1a] aspect-square mb-5">
+                <span className="absolute top-3 left-3 bg-white text-black text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider z-10">
                   {prod.tag}
                 </span>
                 <img
                   src={prod.img}
                   alt={prod.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"
                 />
               </div>
-              <h3 className="font-semibold text-gray-800 text-sm group-hover:text-black transition">
+              <h3 className="font-semibold text-gray-300 text-sm group-hover:text-white transition">
                 {prod.title}
               </h3>
-              <div className="flex items-center justify-between mt-3">
-                <span className="font-black text-base">{prod.price}</span>
-                <button className="bg-gray-100 hover:bg-black hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition">
+              <div className="flex items-center justify-between mt-4">
+                <span className="font-black text-lg text-white">{prod.price}</span>
+                <button className="bg-[#333333] text-white hover:bg-white hover:text-black px-4 py-2 rounded-lg text-xs font-bold transition duration-300">
                   + Add
                 </button>
               </div>
@@ -169,46 +134,45 @@ function Home() {
         </div>
       </section>
 
-      {/* 6. Footer */}
-      <footer className="border-t border-gray-200 bg-white mt-20 py-12">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      {/* 5. Footer */}
+      <footer className="border-t border-[#333333] bg-[#111111] mt-24 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <div className="text-xl font-black uppercase mb-4">AURA.STUDIO</div>
-            <p className="text-xs text-gray-500 leading-relaxed">
-              Modern clothing store UI built with React and Tailwind CSS for
-              seamless shopping experience.
+            <div className="text-2xl font-black uppercase mb-5 text-white tracking-widest">AURA.STUDIO</div>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Modern premium clothing store UI built with React and Tailwind CSS for a seamless shopping experience.
             </p>
           </div>
           <div>
-            <h4 className="font-bold text-xs uppercase tracking-wider mb-3">
+            <h4 className="font-bold text-xs uppercase tracking-widest mb-4 text-white">
               Shop
             </h4>
-            <ul className="text-xs text-gray-500 space-y-2">
-              <li>Men's Wear</li>
-              <li>Women's Wear</li>
-              <li>Accessories</li>
+            <ul className="text-sm text-gray-400 space-y-3">
+              <li className="hover:text-white cursor-pointer transition">Men's Wear</li>
+              <li className="hover:text-white cursor-pointer transition">Women's Wear</li>
+              <li className="hover:text-white cursor-pointer transition">Accessories</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-xs uppercase tracking-wider mb-3">
+            <h4 className="font-bold text-xs uppercase tracking-widest mb-4 text-white">
               Help
             </h4>
-            <ul className="text-xs text-gray-500 space-y-2">
-              <li>Order Status</li>
-              <li>Shipping & Delivery</li>
-              <li>Returns</li>
+            <ul className="text-sm text-gray-400 space-y-3">
+              <li className="hover:text-white cursor-pointer transition">Order Status</li>
+              <li className="hover:text-white cursor-pointer transition">Shipping & Delivery</li>
+              <li className="hover:text-white cursor-pointer transition">Returns</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-xs uppercase tracking-wider mb-3">
+            <h4 className="font-bold text-xs uppercase tracking-widest mb-4 text-white">
               Newsletter
             </h4>
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 text-xs border rounded-lg mb-2 focus:outline-none"
+              className="w-full px-4 py-3 text-sm bg-[#222222] border border-[#444444] text-white rounded-lg mb-3 focus:outline-none focus:border-white transition"
             />
-            <button className="w-full bg-black text-white py-2 rounded-lg text-xs font-bold">
+            <button className="w-full bg-white text-black py-3 rounded-lg text-sm font-bold hover:bg-gray-200 transition">
               Subscribe
             </button>
           </div>
