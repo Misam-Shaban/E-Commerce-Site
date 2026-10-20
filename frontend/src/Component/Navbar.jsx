@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -29,10 +29,10 @@ export default function Navbar() {
         {/* Right Section: Fixed Search + Icons */}
         <div className="flex items-center space-x-6">
           <div className="relative flex items-center border-b border-gray-400 focus-within:border-white pb-1 w-40 sm:w-56 transition-all">
-            {/* Fixed Magnifying Glass Icon */}
-            <svg className="w-4 h-4 text-white mr-3 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 7 0 0114 0z" />
-            </svg>
+            
+            {/* Yahan SVG hata kar clean emoji laga diya gaya hai */}
+            <span className="text-white text-sm mr-3 select-none">🔍</span>
+            
             <input
               type="text"
               placeholder="Search"

@@ -1,5 +1,7 @@
 import Navbar from "../Component/Navbar.jsx";
 import Hero from "../Component/Hero.jsx";
+import CategoryBar from "../Component/CategoryBar.jsx";
+import CategoriesInFocus from "../Component/CategoriesInFocus.jsx";
 
 function Home() {
   return (
@@ -11,6 +13,11 @@ function Home() {
       {/* 2. Hero Section */}
       <Hero />
 
+
+      {/* Category Bar */}
+      <CategoryBar />
+      {/* Category Section */}
+      <CategoriesInFocus />
       {/* 3. Categories Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 mt-8">
         <div className="flex justify-between items-end mb-10">
@@ -58,7 +65,13 @@ function Home() {
                 alt={cat.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-end p-6">
+              <div
+                className="absolute inset-0 flex items-end p-6"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top, rgb(0 0 0 / 90%), rgb(0 0 0 / 30%), transparent)",
+                }}
+              >
                 <h3 className="text-white font-bold text-xl tracking-wide">{cat.title}</h3>
               </div>
             </div>

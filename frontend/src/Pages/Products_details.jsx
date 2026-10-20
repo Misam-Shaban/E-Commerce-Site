@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Products_details() {
   return (
     <div>

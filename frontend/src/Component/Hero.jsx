@@ -1,8 +1,6 @@
-import React from 'react';
-
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen min-h-[750px] flex items-center text-white bg-[#1a1a1a]">
+    <section className="relative w-full h-screen min-h-187.5 flex items-center text-white bg-[#1a1a1a]">
       
       {/* Background Image - Premium Dark Wardrobe */}
       <div 
@@ -13,7 +11,7 @@ export default function Hero() {
       />
       
       {/* Gradient for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/70 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-r from-[#1a1a1a] via-[#1a1a1a]/70 to-transparent" />
 
       {/* Main Content Container - Left Aligned */}
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col justify-center">
