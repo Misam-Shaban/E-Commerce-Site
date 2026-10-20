@@ -33,11 +33,11 @@ export default function FootwearSection() {
   ];
 
   return (
-    <section className="w-full bg-[#181818] py-20 px-4 md:px-8 border-t border-[#2a2a2a]">
+    <section className="w-full bg-[#181818] py-20 px-4 md:px-8 border-t border-dark-surface">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-[#2a2a2a] pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-dark-surface pb-6">
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-gray-400">
               Sole Culture
@@ -61,7 +61,7 @@ export default function FootwearSection() {
             <a
               key={idx}
               href={item.link}
-              className="group relative h-[420px] rounded-2xl overflow-hidden bg-[#222222] border border-[#333333] hover:border-white/50 transition duration-500 cursor-pointer block shadow-2xl"
+              className="group relative h-105 rounded-2xl overflow-hidden bg-[#222222] border border-[#333333] hover:border-white/50 transition duration-500 cursor-pointer block shadow-2xl"
             >
               {/* Background Image */}
               <img
@@ -78,7 +78,7 @@ export default function FootwearSection() {
               </div>
 
               {/* Bottom Dark Gradient & Info */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/30 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-black text-white uppercase tracking-wider group-hover:translate-x-1 transition duration-300">
                   {item.title}
                 </h3>
