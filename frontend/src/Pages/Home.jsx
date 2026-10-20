@@ -3,7 +3,7 @@ import Hero from "../Component/Hero.jsx";
 import CategoryBar from "../Component/CategoryBar.jsx";
 import CategoriesInFocus from "../Component/CategoriesInFocus.jsx";
 import AccessoriesSection from "../Component/AccessoriesSection.jsx";
-
+import FootwearSection from "../Component/FootwearSection.jsx";
 function Home() {
   return (
     <div className="min-h-screen bg-[#181818] text-gray-100 font-sans pb-10">
@@ -21,7 +21,10 @@ function Home() {
       <CategoriesInFocus />
       {/* Accessories Section */}
       <AccessoriesSection />  
+      {/* Footwear Section */}        
+      <FootwearSection />
       {/* 3. Categories Section */}
+
       <section className="max-w-7xl mx-auto px-6 py-16 mt-8">
         <div className="flex justify-between items-end mb-10">
           <div>
