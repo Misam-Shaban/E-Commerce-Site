@@ -4,6 +4,7 @@ import CategoryBar from "../Component/CategoryBar.jsx";
 import CategoriesInFocus from "../Component/CategoriesInFocus.jsx";
 import AccessoriesSection from "../Component/AccessoriesSection.jsx";
 import FootwearSection from "../Component/FootwearSection.jsx";
+import Footer from "../Component/Footer.jsx";
 function Home() {
   return (
     <div className="min-h-screen bg-[#181818] text-gray-100 font-sans pb-10">
@@ -23,13 +24,11 @@ function Home() {
       <AccessoriesSection />  
       {/* Footwear Section */}        
       <FootwearSection />
-      
-
-      
-
+      {/* 4. Footer */}
+      <Footer/>  
     
 
-      {/* 5. Footer */}
+      {/* 5. Footer
       <footer className="border-t border-[#333333] bg-[#111111] mt-24 py-16">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
@@ -72,7 +71,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
