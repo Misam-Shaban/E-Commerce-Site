@@ -30,7 +30,7 @@ export default function AccessoriesSection() {
 
   return (
     <section className="w-full bg-[#181818] py-20 px-4 md:px-8 border-t border-dark-surface">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto mb-14">

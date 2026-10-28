@@ -12,7 +12,7 @@ export default function CategoryBar() {
 
   return (
     <section className="w-full bg-[#181818] py-8 px-4 md:px-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-8xl mx-auto">
         {categories.map((cat, idx) => (
           <a
             key={idx}

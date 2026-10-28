@@ -34,7 +34,7 @@ export default function FootwearSection() {
 
   return (
     <section className="w-full bg-[#181818] py-20 px-4 md:px-8 border-t border-dark-surface">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-dark-surface pb-6">

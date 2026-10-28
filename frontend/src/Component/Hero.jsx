@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-r from-[#1a1a1a] via-[#1a1a1a]/70 to-transparent" />
 
       {/* Main Content Container - Left Aligned */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col justify-center">
+      <div className="relative z-10 max-w-8xl mx-auto w-full px-6 flex flex-col justify-center">
         
         <div className="max-w-2xl space-y-7 pt-16"> 
           

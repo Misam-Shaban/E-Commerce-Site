@@ -91,7 +91,7 @@ export default function CategoriesInFocus() {
 
   return (
     <section className="w-full bg-[#181818] py-16 px-4 md:px-8 text-white border-t border-dark-surface">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
         {/* Left Column: Badi Featured Model Photo */}
         <div className="lg:col-span-5 h-125 md:h-155 rounded-2xl overflow-hidden bg-[#222] border border-[#333] shadow-2xl relative group">

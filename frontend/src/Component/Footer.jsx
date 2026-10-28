@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#121212] text-gray-400 text-sm border-t border-dark-surface pt-16 pb-12 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         
         {/* Top Newsletter Section */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between pb-16 border-b border-[#262626] gap-8">
