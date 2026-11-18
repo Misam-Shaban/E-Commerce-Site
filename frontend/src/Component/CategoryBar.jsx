@@ -2,10 +2,10 @@
 
 export default function CategoryBar() {
   const categories = [
-  { name: 'T-SHIRTS', img: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500' },
-  { name: 'POLOS', img: 'https://images.unsplash.com/photo-1626497764746-6dc36546b388?w=500' },
-  { name: 'SHIRTS', img: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500' },
-  { name: 'ACTIVEWEAR', img: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500' },
+  { name: 'T-SHIRTS', img: 'https://i.pinimg.com/736x/16/27/32/1627320c5788efd981fce29ad0fe8b6a.jpg' },
+  { name: 'POLOS', img: 'https://i.pinimg.com/1200x/9f/9f/d6/9f9fd633e41bb1f0338873998b89f4da.jpg' },
+  { name: 'SHIRTS', img: 'https://i.pinimg.com/736x/f2/7e/fe/f27efe8eb1cf32a628d8006ebe610820.jpg' },
+  { name: 'ACTIVEWEAR', img: 'https://i.pinimg.com/736x/22/1a/8b/221a8ba526ba5269a26142df30ec8381.jpg' },
   { name: 'DENIM', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500' },
   { name: 'TROUSERS', img: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500' },
 ];

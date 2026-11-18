@@ -66,7 +66,9 @@ export default function AccessoriesSection() {
                 <h3 className="text-xl font-extrabold text-white uppercase tracking-wider group-hover:translate-x-1 transition duration-300">
                   {item.title}
                 </h3>
+                <div className="h-0.5 w-0 group-hover:w-full bg-white transition-all duration-500 mt-3" />
               </div>
+              
             </a>
           ))}
         </div>

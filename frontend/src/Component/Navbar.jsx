@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 text-white bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between border-b border-white/10">
+      <div className="max-w-8xl mx-auto px-6 h-24 flex items-center justify-between border-b border-white/10">
         
         {/* Left Section: Menu + Logo */}
         <div className="flex items-center space-x-6">
@@ -17,6 +17,7 @@ export default function Navbar() {
           <a href="/" className="text-2xl md:text-3xl font-bold tracking-widest uppercase">
             AURA.STUDIO
           </a>
+                
         </div>
 
         {/* Center Section: Navigation Links */}
@@ -25,7 +26,7 @@ export default function Navbar() {
           <a href="#women" className="hover:text-white transition">Women</a>
           <a href="#juniors" className="hover:text-white transition">Juniors</a>
         </nav>
-
+            {/* <div className="h-0.5 w-0 group-hover:w-full bg-white transition-all duration-500 mt-3" /> */}
         {/* Right Section: Fixed Search + Icons */}
         <div className="flex items-center space-x-6">
           <div className="relative flex items-center border-b border-gray-400 focus-within:border-white pb-1 w-40 sm:w-56 transition-all">
