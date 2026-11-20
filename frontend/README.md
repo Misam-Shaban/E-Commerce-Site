@@ -1,16 +1,63 @@
-# React + Vite
+# E-Commerce Site — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the React storefront for the E-Commerce Site project. It is built with React, Vite, Tailwind CSS, React Router, and Axios.
 
-Currently, two official plugins are available:
+## Current UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The home page is composed of reusable sections:
 
-## React Compiler
+- Navbar and hero section
+- Category bar and category carousel
+- Accessories section
+- Footwear section
+- Footer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app currently defines these routes:
 
-## Expanding the ESLint configuration
+| Route | Page | Status |
+| --- | --- | --- |
+| `/` | Home | Storefront UI |
+| `/sign-up` | Sign up | Connected to the backend signup endpoint |
+| `/login` | Login | Placeholder |
+| `/Products/:id` | Product details | Placeholder |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+From this directory:
+
+```bash
+npm install
+npm run dev
+```
+
+Vite prints the local development URL in the terminal.
+
+## Other Commands
+
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+## API Configuration
+
+The Axios client is configured in `src/API/axios.js` with this base URL:
+
+```
+http://localhost:5000/api
+```
+
+Start the backend separately from the repository's `Backend/` directory. See the [main project README](../README.md) for backend setup and API details.
+
+## Main Dependencies
+
+- React and React DOM
+- React Router
+- Tailwind CSS
+- Axios
+- Vite
+
+---
+
+Part of [Misam Shaban's E-Commerce Site](https://github.com/Misam-Shaban/E-Commerce-Site).
